@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting ready for REACT</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<div id='root'>HERE</div>
+
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+<script  type="text/babel">
+
+
+
+const FunBusCard = () => {
+  const [color, setTextColor] = React.useState('#404040' )
+  const [bgColor, setBgColor] = React.useState('#aadae7')
+  let list = ["Russian", "English", "German", "Finnish", "HTML", "CSS", "Javascript", "Python"]
+  let newlist = list.map((item, index)=> (<div key={index+'listitem'} className="Button-wrap"><button className="Button-self">{item}</button></div>))
+  let styles = {backgroundColor: bgColor, color: color, height: '88vh',borderRadius: '8px'}
+    
+
+  return (
+    <div className="App" style = {styles}>
+    <div className="App-wrap">
+    <div className="Inner-cont">
+      <header className="App-header" style = {styles}>
+        <img className="Logo-img" src="ava.jpg"  />
+      <h1>
+          Mariia Rogina
+        </h1>
+        <p>
+        Freelance translator, junior web-developer
+        </p>
+       <div className="Butt-wrap">
+        {newlist}
+        </div>
+        
+       
+        <button style={{margin: '40px 0px'}}
+        onClick={() => {
+          setTextColor(color ===  '#404040' ? '#aadae7'  :  '#404040')
+          setBgColor(bgColor ===  '#aadae7'? '#404040'  :  '#aadae7')
+        }}  id = "change">
+     
+          Change the Skin
+        </button>
+      
+      </header>
+    </div>
+    </div>
+    </div>
+  )
+}
+
+  const myRoot = document.getElementById('root')
+  ReactDOM.render(<div>
+    <FunBusCard/>
+  
+    </div>, 
+    myRoot)
+
+</script>  
+</body>
+</html>

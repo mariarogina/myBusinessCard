@@ -1,0 +1,133 @@
+.App {
+  text-align: left;
+  
+}
+.App-wrap {
+  
+  display:flex;
+  flex-direction: column;
+ 
+}
+
+.Inner-cont{
+  
+  
+}
+
+.Butt-wrap {
+  
+  display:flex;
+  flex-direction: row;
+  padding:25px 0px;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.Logo-img{
+  border-radius: 50%;
+}
+.App-header {
+  padding-left:20px;
+  
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.Form-wrap {
+  margin:20px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Elem-wrap {
+  margin:10px;
+  border-radius: 15px;
+  min-height: 40px;
+  min-width:80px;
+  
+}
+
+.Input-wrap {
+  margin:10px;
+  border-radius: 15px;
+  min-height: 40px;
+  min-width:80px;
+  border-width:thin;
+  outline:none;
+}
+.Button-wrap {
+  
+ 
+  
+}
+
+.Button-self {
+  border: 2px solid #30a189;
+  outline: none;
+  margin-right:20px;
+  background-color:#30a189;
+  border-radius: 15px;
+  min-height: 30px;
+  min-width:55px;
+  color:white;
+  font-size:1.1rem;
+  font-family: Arial;
+  padding:11px;
+  
+}
+
+#change {
+  border: 0.5px solid #4bb1c4;
+  outline: none;
+  margin-right:20px;
+  margin-top:20px;
+  background-color:#2e6f7c;
+  border-radius: 5px;
+  min-height: 15px;
+  min-width:34px;
+  color:rgb(213, 221, 243);
+  font-size:0.8rem;
+  font-family: Arial;
+  padding:7px;
+
+}
+
+.Button-self:hover {background-color: #185347}
+
+.Button-self:active {
+  background-color: #185347;
+  box-shadow: 0 5px rgb(182, 157, 157);
+  transform: translateY(4px);
+}
+.App-link {
+  color: #61dafb;
+}
+
+.Logo-img {
+  margin:20px 20px 20px 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
