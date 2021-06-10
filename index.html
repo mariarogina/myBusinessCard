@@ -22,9 +22,9 @@
 const FunBusCard = () => {
   const [color, setTextColor] = React.useState('#404040' )
   const [bgColor, setBgColor] = React.useState('#aadae7')
-  let list = ["Russian", "English", "German", "Finnish", "HTML", "CSS", "Javascript", "Python"]
+  let list = ["Russian", "English", "German", "Finnish", "HTML", "CSS", "Javascript", "Python", "React"]
   let newlist = list.map((item, index)=> (<div key={index+'listitem'} className="Button-wrap"><button className="Button-self">{item}</button></div>))
-  let styles = {backgroundColor: bgColor, color: color, height: '88vh',borderRadius: '8px'}
+  let styles = {backgroundColor: bgColor, color: color, height: '97vh',borderRadius: '8px'}
     
 
   return (
@@ -44,7 +44,10 @@ const FunBusCard = () => {
         </div>
         
        
-        <button style={{margin: '40px 0px'}}
+        
+      
+      </header>
+      <button style={{margin: '10px 10px'}}
         onClick={() => {
           setTextColor(color ===  '#404040' ? '#aadae7'  :  '#404040')
           setBgColor(bgColor ===  '#aadae7'? '#404040'  :  '#aadae7')
@@ -52,8 +55,6 @@ const FunBusCard = () => {
      
           Change the Skin
         </button>
-      
-      </header>
     </div>
     </div>
     </div>
