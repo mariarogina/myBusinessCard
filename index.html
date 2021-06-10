@@ -22,7 +22,7 @@
 const FunBusCard = () => {
   const [color, setTextColor] = React.useState('#404040' )
   const [bgColor, setBgColor] = React.useState('#aadae7')
-  let list = ["Russian", "English", "German", "Finnish", "HTML", "CSS", "Javascript", "Python"]
+  let list = ["Russian", "English", "German", "Finnish", "HTML", "CSS", "Javascript", "Python", "React]
   let newlist = list.map((item, index)=> (<div key={index+'listitem'} className="Button-wrap"><button className="Button-self">{item}</button></div>))
   let styles = {backgroundColor: bgColor, color: color, height: '88vh',borderRadius: '8px'}
     
